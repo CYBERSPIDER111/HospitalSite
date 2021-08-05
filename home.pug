@@ -1,0 +1,44 @@
+extends base.pug
+
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection
+        div Welcome to Dev's multispeciality hospital
+        div.l Stay Home, Stay Safe
+    section#mission 
+        h2 Our Mission
+        div.card 
+            h3 Oxygen Supply
+            div.card-box
+                div.card-img
+                    img(src="/static/d.jpg")
+                    marquee(behavior="style", direction="horizontal") We are providing cylinders without any shortage
+        div.card
+            h3 Beds Availability
+            div.card-box
+                div.card-img
+                    img(src="/static/e.png")
+                    marquee(behavior="style", direction="horizontal") We are providing beds without any shortage
+        div.card
+            h3 Proper Sanitation
+            div.card-box
+                div.card-img
+                    img(src="/static/f.jpeg")
+                    marquee(behavior="style", direction="horizontal")  We are ensuring full campus with proper sanitation
+    
+    section#sponsorsSection
+        h2 Our Sponsors 
+        div#sponsors
+            img(src="/static/x.png" class="spimage")
+            img(src="/static/y.png" class="spimage")
+            img(src="/static/z.png" class="spimage")
+            img(src="/static/zz.png" class="spimage")
+   
+    
